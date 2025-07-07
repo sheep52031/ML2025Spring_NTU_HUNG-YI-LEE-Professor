@@ -1,0 +1,57 @@
+# 模型檔案
+*.gguf
+*.bin
+*.pth
+*.ckpt
+*.pt
+
+# 資料集
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.jsonl
+*.zip
+*.tar.gz
+*.tar
+*.7z
+*.npz
+*.npy
+*.h5
+*.pkl
+*.pickle
+public.txt
+private.txt
+
+# Jupyter Notebook checkpoint
+.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Conda/venv
+.env
+.venv
+venv/
+ENV/
+
+# VSCode/IDE
+.vscode/
+.idea/
+
+# 其他暫存檔
+.DS_Store
+Thumbs.db
+
+# 輸出結果
+*.txt
+!README.md
+
+# log 檔
+*.log
+
+# pip wheel
+*.whl 
