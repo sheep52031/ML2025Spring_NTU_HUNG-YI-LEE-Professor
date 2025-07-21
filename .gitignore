@@ -55,3 +55,14 @@ Thumbs.db
 
 # pip wheel
 *.whl 
+
+# 忽略 HW1_AI Agent1--RAG 資料夾下所有 txt 檔案
+HW1_AI Agent1--RAG/*.txt
+# 但保留 private.txt 和 public.txt
+!HW1_AI Agent1--RAG/private.txt
+!HW1_AI Agent1--RAG/public.txt
+
+# 忽略 HW1_AI Agent1--RAG 資料夾下所有 csv 檔案
+HW1_AI Agent1--RAG/*.csv
+# 但保留 20250707.csv
+!HW1_AI Agent1--RAG/20250707.csv 
