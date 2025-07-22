@@ -1,0 +1,24 @@
+# Core ML and RAG dependencies
+llama-cpp-python==0.2.90
+sentence-transformers>=5.0.0
+chromadb>=1.0.0
+langchain>=0.1.0
+langchain-community>=0.0.20
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.20.0
+
+# Web scraping and search
+googlesearch-python
+beautifulsoup4
+requests-html
+charset-normalizer
+lxml_html_clean
+
+# Utilities
+tqdm
+python-dotenv
+
+# Note: PyTorch and CUDA dependencies should be installed via conda
+# See environment.yml for system-level dependencies

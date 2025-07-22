@@ -1,0 +1,31 @@
+name: ml2025spring-rag
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+
+dependencies:
+  # Python runtime
+  - python=3.10
+  
+  # Core ML frameworks with CUDA support
+  - pytorch=2.5.1
+  - pytorch-cuda=12.1
+  - cudatoolkit=12.1
+  
+  # System libraries
+  - numpy=2.2.6
+  - pip
+  
+  # Jupyter environment
+  - jupyter
+  - ipython
+  - ipykernel
+  
+  # Development tools
+  - git
+  
+  # pip dependencies (managed by uv in modern setup)
+  - pip:
+    - uv  # Modern Python package manager

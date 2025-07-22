@@ -1,0 +1,75 @@
+[project]
+name = "ml2025-hw1-rag"
+version = "1.0.0"
+description = "ML2025 Homework 1 - RAG-based AI Agent with Multi-Agent Architecture"
+authors = [
+    {name = "Student", email = "student@example.com"}
+]
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+
+# Core dependencies for RAG system
+dependencies = [
+    # LLM and RAG frameworks
+    "llama-cpp-python==0.2.90",
+    "sentence-transformers>=5.0.0",
+    "chromadb>=1.0.0",
+    "langchain>=0.1.0",
+    "langchain-community>=0.0.20",
+    
+    # Data processing
+    "pandas>=2.0.0",
+    "numpy>=1.20.0",
+    
+    # Web scraping and search
+    "googlesearch-python",
+    "beautifulsoup4",
+    "requests-html",
+    "charset-normalizer",
+    "lxml_html_clean",
+    
+    # Utilities
+    "tqdm",
+    "python-dotenv",
+]
+
+[project.optional-dependencies]
+# Development dependencies
+dev = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "isort>=5.0.0",
+    "flake8>=6.0.0",
+    "mypy>=1.0.0",
+]
+
+# GPU-specific dependencies
+gpu = [
+    # Will be handled by conda for CUDA compatibility
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "isort>=5.0.0",
+    "flake8>=6.0.0",
+]
+
+[tool.black]
+line-length = 88
+target-version = ['py310']
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true

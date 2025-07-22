@@ -1,0 +1,87 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# uv
+.uv/
+uv.lock
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Model files (large files)
+*.gguf
+*.bin
+*.safetensors
+*.pt
+*.pth
+
+# Dataset files
+*.txt
+!requirements*.txt
+!README.txt
+
+# Output files
+*.csv
+*.zip
+20250707_*.txt
+20250707.txt
+20250707.csv
+
+# Temporary files
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# Environment variables
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Cache
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ChromaDB
+chroma_db/
+*.sqlite
+*.db
